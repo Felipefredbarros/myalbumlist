@@ -1,0 +1,15 @@
+services:
+  db:
+    image: docker.io/library/postgres:16
+    container_name: mal-postgres
+    environment:
+      POSTGRES_DB: myalbumlist
+      POSTGRES_USER: mal
+      POSTGRES_PASSWORD: mal_dev
+    ports:
+      - "5433:5432"
+    volumes:
+      - mal-pgdata:/var/lib/postgresql/data
+
+volumes:
+  mal-pgdata:
