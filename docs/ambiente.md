@@ -26,7 +26,10 @@ docker compose up -d
 cd api
 .\mvnw.cmd spring-boot:run
 
-# 4. Abrir o banco pelo terminal
+# 4. Rodar os testes (o Docker precisa estar rodando; não depende do compose)
+.\mvnw.cmd verify
+
+# 5. Abrir o banco pelo terminal
 docker exec -it mal-postgres psql -U mal -d myalbumlist
 #    \dt          lista tabelas
 #    \d tabela    descreve colunas, índices e constraints
