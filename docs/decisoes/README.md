@@ -34,3 +34,4 @@ Uma decisão aceita não é editada depois: se mudar, cria-se uma nova que a **s
 |---|---|---|
 | D-01 a D-20 | [Registro inicial](0000-registro-inicial.md) | aceitas (D-12 substituída) |
 | 0021 | [Docker Desktop no lugar do Podman](0021-docker-no-lugar-do-podman.md) | aceita |
+| 0022 | [Testcontainers para testes com o banco](0022-testcontainers.md) | aceita |
