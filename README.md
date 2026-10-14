@@ -77,6 +77,7 @@ Algumas escolhas que valem destacar (o registro completo está em [docs/decisoes
 
 ## Documentação
 
+- [Produto](docs/produto.md): o que o sistema faz, do ponto de vista de quem usa.
 - [Arquitetura](docs/arquitetura.md): módulos, modelo de dados, regras de negócio e integrações.
 - [Fases](docs/fases.md): o que cada fase entrega e quando está pronta.
 - [Decisões](docs/decisoes/README.md): o porquê de cada escolha.

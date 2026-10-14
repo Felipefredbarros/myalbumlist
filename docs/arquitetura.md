@@ -6,49 +6,9 @@ Migrado do *Documento de Arquitetura v0.2* (PDF, 21/08/2026), que foi a última 
 
 ---
 
-## 1. Visão do produto
+## 1. Produto
 
-O MyAlbumList é um rastreador de escuta de álbuns no modelo do MyAnimeList: o usuário mantém uma biblioteca pessoal de álbuns classificados por status, dá notas, monta rankings e acompanha o próprio histórico de escuta.
-
-### 1.1 Problema que resolve
-
-Existem sites de nota de álbum (RateYourMusic, Album of the Year) e existem rastreadores de escuta (Last.fm). Não existe um produto que combine a mecânica de status do MyAnimeList (escutando, completo, on hold, dropped, planejo escutar) com controle de progresso no nível da faixa. Esse é o diferencial central e a razão técnica pela qual a fonte de metadados precisa fornecer tracklist completa.
-
-### 1.2 Escopo do v1 (uso pessoal)
-
-- Buscar e importar álbuns de uma base externa, com artista, capa, ano e tracklist.
-- Classificar álbuns nos cinco status.
-- Registrar em qual faixa a escuta parou.
-- Dar nota de 1 a 10 em álbuns.
-- Contar relistens.
-- Marcar faixas favoritas dentro de um álbum.
-- Montar top 10 de álbuns, artistas e faixas.
-- Filtrar a biblioteca por gênero.
-
-### 1.3 Fora de escopo no v1
-
-- Cadastro público, login e perfis de outros usuários (planejado para a Fase 4).
-- Ranking global de álbuns com média entre usuários.
-- Resenhas em texto, comentários, seguir usuários.
-- Aplicativo mobile nativo.
-- Integração com scrobbling automático (Last.fm, Spotify).
-
-### 1.4 Semântica: álbum não é anime
-
-Os cinco status do MyAnimeList foram desenhados para obras seriadas consumidas ao longo de semanas. Um álbum dura 45 minutos. A adaptação adotada:
-
-| Status | Significado no MyAlbumList |
-|---|---|
-| `LISTENING` | Na rotação atual: o álbum que você está digerindo nesta semana. Não significa "tocando agora". |
-| `COMPLETED` | Ouvido por inteiro pelo menos uma vez, com atenção. |
-| `ON_HOLD` | Começou, parou no meio, pretende voltar. |
-| `DROPPED` | Começou e não pretende terminar. |
-| `PLAN_TO_LISTEN` | Fila de escuta. |
-
-Duas consequências de modelagem que diferenciam o produto de um clone literal do MAL:
-
-- **Relisten é a norma, não a exceção.** Ao contrário de rewatch em anime, reouvir álbum é o comportamento padrão. O contador de relistens é um dado de primeira classe.
-- **Faixa favorita > episódio favorito.** Marcar faixas dentro do álbum tem muito mais uso real do que o equivalente em anime. Por isso está no v1.
+O que o sistema faz, do ponto de vista de quem usa (problema, status, funcionalidades e escopo do v1), está em [`produto.md`](produto.md).
 
 ---
 
