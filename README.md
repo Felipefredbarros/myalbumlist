@@ -78,6 +78,7 @@ Algumas escolhas que valem destacar (o registro completo está em [docs/decisoes
 ## Documentação
 
 - [Arquitetura](docs/arquitetura.md): módulos, modelo de dados, regras de negócio e integrações.
+- [Fases](docs/fases.md): o que cada fase entrega e quando está pronta.
 - [Decisões](docs/decisoes/README.md): o porquê de cada escolha.
 - [Ambiente](docs/ambiente.md): ferramentas, comandos de toda sessão e erros comuns.
 - [Fluxo de trabalho](CONTRIBUTING.md): issues, branches, commits e PRs.

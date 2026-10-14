@@ -311,7 +311,7 @@ Dois papéis: **andaime da hierarquia** (~15 `genres` amplos e ~600 `styles`, do
 
 ## 7. Fases
 
-O planejamento detalhado de cada fase (entregas e critério de pronto) vive nas **Milestones e Issues do GitHub**. Resumo:
+O detalhamento de cada fase (entregas e critério de pronto) está em [`fases.md`](fases.md), e cada entrega vira uma issue no GitHub. Resumo:
 
 | Fase | Objetivo | Critério de pronto |
 |---|---|---|
