@@ -1,5 +1,7 @@
 # MyAlbumList
 
+[![CI](https://github.com/Felipefredbarros/myalbumlist/actions/workflows/ci.yml/badge.svg)](https://github.com/Felipefredbarros/myalbumlist/actions/workflows/ci.yml)
+
 Um rastreador de escuta de álbuns no estilo MyAnimeList. Você mantém uma biblioteca pessoal de álbuns classificados por status (escutando, completo, em pausa, abandonado, planejo escutar), dá notas de 1 a 10, conta relistens e monta seus top 10.
 
 O diferencial é o **progresso no nível da faixa**: o sistema guarda em qual faixa a escuta parou e quais faixas são suas favoritas dentro de cada álbum. Os metadados (artista, capa, ano, tracklist e gêneros) vêm do [MusicBrainz](https://musicbrainz.org/) e ficam guardados localmente depois da primeira busca.
