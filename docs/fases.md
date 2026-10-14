@@ -10,14 +10,12 @@ No GitHub, cada fase é uma **milestone**, e cada entrega abaixo vira uma **issu
 
 **Objetivo:** ter o esqueleto rodando de ponta a ponta, sem nenhuma regra de negócio.
 
-**Já entregue (21/08/2026):**
+**Concluída em 14/10/2026.** Entregas:
 - `compose.yaml` subindo PostgreSQL 16 na porta 5433, com volume `mal-pgdata`.
 - Projeto Spring Boot 4.1.1 em `api/`.
 - Flyway no comando do schema, `ddl-auto=validate`.
 - Aplicação subindo e conectando ao banco.
 - Repositório git em Conventional Commits, publicado no GitHub.
-
-**Pendente:**
 - README e documentação no repositório (#1).
 - Testcontainers e `./mvnw verify` passando do zero (#2).
 - CI com GitHub Actions (#3).

@@ -17,12 +17,13 @@ Projeto solo, mas desenvolvido com o fluxo de um time.
    feat(catalog): entidade Album com relacionamento LAZY para Artist
    test(catalog): valida UNIQUE de track_number por álbum
    ```
-   Tipos: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`. O escopo é o módulo (`catalog`, `genre`, `library`, `metadata`, `rating`, `identity`, `db`).
+   Tipos: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`, `ci`. O escopo é o módulo (`catalog`, `genre`, `library`, `metadata`, `rating`, `identity`, `db`).
 5. **Pull request** para a `main`, com `Closes #N` na descrição para fechar a issue no merge.
 6. **Squash merge.** A `main` fica com um commit por entrega, com o título do PR em Conventional Commits; o histórico detalhado fica no PR.
 
 ## Regras
 
 - A `main` está sempre funcionando. Nada é commitado direto nela.
+- PR só entra na `main` com o CI verde (`./mvnw verify` no GitHub Actions).
 - Migration aplicada nunca é editada (ver [convenções](docs/arquitetura.md#6-convenções)).
 - Toda decisão de arquitetura nova vira um arquivo em [`docs/decisoes/`](docs/decisoes/README.md), no mesmo PR que a implementa.
